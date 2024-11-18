@@ -1,12 +1,13 @@
-import Hello from "./components/Hello";
-import makersLogo from "./assets/Makers-Logo.png";
+import Profile from "./components/Profile";
+import Product from "./components/Product"
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Hello name="World" />
-      <img className="logo" src={makersLogo}></img>
+      <Profile name="Kelly" job="Junior software engineer apprentice" birthday="31st August"/>
+      <Product name="Air Fryer K2000" description="The best air fryer to fry all things, even Mars bars" price={150}/>
+      <Product name="Microwave" description="It cooks things quickly" price={120}/>
     </>
   );
 }
